@@ -7,20 +7,39 @@
 body {
   font-family: Arial;
   margin: 0;
+  position: absolute;
+}
+
+.container{
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+ 
 }
 
 /* Header/logo Title */
 .header {
+  display: flex;
+  flex-direction: column;
   padding: 5px;
   text-align: center;
   background: rgb(84, 198, 211);
   color: white;
 }
 
+.subheader{
+
+
+  text-align: center;
+}
+
+
 /* Style the top navigation bar */
 .navbar {
   display: flex;
-  background-color: rgb(0, 88, 138);
+  background-color: rgb(1, 133, 209);
+  justify-content: center;
 }
 
 /* Style the navigation bar links */
@@ -40,23 +59,30 @@ body {
 /* Column container */
 .row {  
   display: flex;
+  flex: 1;
   flex-wrap: wrap;
+  padding: 20px;
 }
 
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
 .side {
-  flex: 30%;
+  /*flex: 30%;*/
   background-color: #f1f1f1;
   padding: 20px;
+  text-align: justify;
+  flex : 1;
+  flex-basis: 20vw;
 }
 
 /* Main column */
 .main {
-  flex: 70%;
+  /*flex: 70%;*/
   background-color: white;
   padding: 20px;
   text-align: justify;
+  flex: 1;
+  flex-basis: 40vw;
 }
 
 /* Fake image, just for this example */
@@ -66,16 +92,24 @@ body {
   padding: 20px;
 }
 
+.myImages{
+  display: flex;
+  justify-content:center;
+}
+
 /* Footer */
 .footer {
   padding: 5px;
   text-align: center;
   background: rgb(35, 31, 32);
+  color: white;
+  font-size: 14px;
 }
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
-  .row, .navbar {   
+@media screen and (max-width: 800px) {
+  .header, .row, .side ,.navbar {   
     flex-direction: column;
+    flex-grow: 1;
   }
 }
