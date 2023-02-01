@@ -62,7 +62,14 @@ body {
   flex: 1;
   flex-wrap: wrap;
   padding: 20px;
+
 }
+
+.row h1,h2,h3,h5 a {
+	color: rgb(0, 88, 138);
+	text-decoration: none
+}
+
 
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
@@ -97,13 +104,34 @@ body {
   justify-content:center;
 }
 
+/* link */
+.link-list {
+	color: rgb(0, 88, 138);
+		}
+   .link-list li{ margin-bottom: 1em;}
+.check-list{list-style-type: none;}
+.check-list li {
+  padding: 0.7em 0 0.7em 2.8em;
+  font-size: 1.2em;
+  background: url("Images/checklist.jpg") 0px 1.05em no-repeat;
+    }
+
+.check-list li {
+      font-size: 1em;
+      line-height: 2em;
+      }
+
+.main.check-list li {
+        border-bottom: solid 1px #e2e6e8;
+          }
 /* Footer */
 .footer {
   padding: 5px;
   text-align: center;
-  background: rgb(35, 31, 32);
+  background: rgb(167,169, 172);
   color: white;
   font-size: 14px;
+  font-weight:bold;
 }
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
@@ -113,3 +141,62 @@ body {
     flex-grow: 1;
   }
 }
+/*
+table, th, td {
+	border:1px solid black;
+			}
+
+th, td {
+	padding: 0 10px 0 10px;
+		}
+			
+table {
+	width: 100%;
+			}
+
+th {
+	background-color: #00588A;
+	color: #fff;
+		
+}
+*/
+img {
+  max-width: 100%
+}
+
+.image {
+  flex-basis: 40%;
+  padding:5px;
+}
+
+.box {
+  display: flex;
+  align-items:center;
+  padding: 5px;
+}
+.pl-5 {padding-left: .5em;}
+.reg-w-75{ width:75%}
+.reg-w-25{ width:75%}
+.container{padding:0;}
+.call-dv-frm{padding-top: 25px;text-align: center;}
+.abtn{padding:0.6rem;transition: all .15s ease;  letter-spacing: .025em;line-height: 1.5;    color: #fff;
+  background-color: rgb(0, 88, 138);text-decoration: none;}
+  
+.table, table{
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #000;
+  background-color: transparent;
+  border: 1px solid #00588A;
+  border-right: 0px solid #00588A;
+}
+
+.table td,
+.table th,table td,
+table th {
+  padding: .75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+  border-right: 1px solid #dee2e6;
+}
+.bg-tbl, table th{background-color: #00588A;color: #fff;}
